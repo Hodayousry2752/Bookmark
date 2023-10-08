@@ -1,0 +1,29 @@
+
+
+h1,.cBookmarker{
+    color: grey;
+    opacity: 0.6;
+    
+}
+.bookH1-div{
+    margin-top: 70px;
+}
+.container-fluid{
+    width: 80%;
+}
+.div-box ,.search{
+    background-color: rgb(236, 233, 233);
+    width: 98%;
+}
+.div-form {
+    width: 80%;
+}
+.btn:hover{
+    box-shadow: 2px 5px 3px rgb(153, 152, 152) ;
+}
+.all-table{
+    width: 98%;
+}
+.div-add{
+    background-image:linear-gradient(to bottom ,rgb(236, 233, 233),white)
+}

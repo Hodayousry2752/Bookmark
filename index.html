@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bookmark.css" rel="stylesheet"/>
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container-fluid text-center">
+        <div class="bookH1-div  mx-auto">
+            <div class=" mx-auto">
+                <h1 class="fw-bolder fs-2 ps-3">Bookmarker</h1>
+                <hr class="mt-5"/>
+            </div>
+            <div class="div-box text-center mx-auto">
+                <h2 class="pt-5">Bookmark your favorite sites</h2>
+                <div class="div-form mx-auto ">
+                    <label for="bookmark-name" class="fw-bolder pt-4 pb-3">Site Name</label>
+                    <input type="text" oninput="regexBookmarkName()" placeholder="Bookmark Name" class="form-control py-1 is-invalid" id="bookmark-name"/>
+                    <label for="website-url" class="fw-bolder py-3">Site URL</label>
+                    <input type="url" placeholder="Website URL" oninput="regexBookmarkUrl()" class="form-control py-1 is-invalid" id="website-url"/>
+                    <button class="btn-blue btn btn-primary mt-3 mb-5" onclick="addBookmark()" id="submitBtn">submit</button>
+                    <!-- <button class="btn-blue btn btn-primary mt-3 mb-5 d-none" id="updateBtn">update</button> -->
+
+                </div>
+            </div>
+        </div>
+        <input type="text" oninput="searchAbout(this.value)" placeholder="search by bookmarker name" class="search form-control mt-5" id='search'/>
+
+        <div id='book-marker' class="all-table mt-5 mx-auto ">
+            
+        </div>
+        <div class="bookH1-div mx-auto">
+            <hr class="mt-5"/>
+            <p class="fw-bold cBookmarker">© 2019 Bookmarker Inc.</p>
+        </div>
+        
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bookmark.js"></script>
+
+</body>
+</html>
